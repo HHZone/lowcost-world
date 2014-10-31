@@ -7,17 +7,17 @@
         {
             "pathRegex": "/web/messages/gettext/admin\\.po",
             "type": "getText",
-            "callbackUrl": "https://callback.url.com",
+            "callbackUrl": "https://callback.url.com"
         },
         {
             "pathRegex": "/web/messages/gettext/users\\.po",
             "type": "getText",
-            "callbackUrl": "https://callback.url.com",
+            "callbackUrl": "https://callback.url.com"
         },
         {
             "pathRegex": "/web/messages/ios/.*\\.strings",
             "type": "ios",
-            "callbackUrl": "https://callback.url.com",
+            "callbackUrl": "https://callback.url.com"
         }
     ]
 }
