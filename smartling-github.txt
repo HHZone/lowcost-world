@@ -1,4 +1,0 @@
-/web/messages/.*\.properties, javaProperties
-/web/messages/gettext/admin\.po, getText, https://callback.url.com
-/web/messages/gettext/users\.po, getText, https://callback.url.com
-/web/messages/ios/*\.strings, ios, https://callback.url.com
