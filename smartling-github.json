@@ -1,13 +1,14 @@
 {
     "resourcesSets": [
         {
-            "pathRegex"                 : "/web/messages/(?<!en).*\\.properties",
+            "pathRegex"                 : "/web/messages/(?!en).*\\.properties",
             "type"                      : "javaProperties"
         },
         {
             "pathRegex"                 : "/web/messages/en/(?<path>.*)\\.properties",
+            "translationPathExpression" : "/web/messages/#{#locale.language}/#{#path}_#{#locale.country.toLoverCase()}.#{#originalFile.extension}",
             "type"                      : "javaProperties",
-            "translationPathExpression" : "/web/messages/#{#locale.language}/#{#path}_#{#locale.country.toLoverCase()}.#{#originalFile.extension}"
+            "authorizeContent"          : true
         }
     ]
 }
