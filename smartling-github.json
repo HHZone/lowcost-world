@@ -6,7 +6,7 @@
         },
         {
             "pathRegex"                 : "/web/messages/en/(?<path>.*)\\.properties",
-            "translationPathExpression" : "/web/messages/#{#locale.language}/#{#path}_#{#locale.country.toLoverCase()}.#{#originalFile.extension}",
+            "translationPathExpression" : "/web/messages/#{#locale.language}/#{#path}_#{#locale.country.toLowerCase()}.#{#originalFile.extension}",
             "type"                      : "javaProperties",
             "authorizeContent"          : true
         }
