@@ -6,7 +6,8 @@
         },
         {
             "pathRegex"                 : "/web/messages/en/(?<path>.*)\\.properties",
-            "translationPathExpression" : "/web/messages/#{#locale.language}/#{#path}_#{#locale.country.toLowerCase()}.#{#originalFile.extension}",
+            "translationPathExpression" : "/web/messages/${locale.language}/${path}_${locale.country.toLowerCase()}.${originalFile.extension}",
+            "translationCommitMessage"  : "Task TRN-18 translate ${originalFile.name} to ${locale.id}\n${translatedFile.fullName}"
             "type"                      : "javaProperties",
             "authorizeContent"          : true
         }
