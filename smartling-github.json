@@ -1,7 +1,7 @@
 {
     "resourcesSets": [
         {
-            "pathRegex"                 : "/web/messages/(?!en).*\\.properties",
+            "pathRegex"                 : "/web/messages/((?!en)|(?!zh)).*\\.properties",
             "type"                      : "javaProperties"
         },
         {
