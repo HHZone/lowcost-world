@@ -1,4 +1,12 @@
 {
+    "locales" : [
+        {
+            "smartling" : "zh-CN"
+        },
+        {
+            "smartling" : "zh-TW"
+        }
+    ],
     "resourcesSets": [
         {
             "pathRegex"                 : "/web/messages/(?!(en|zh)).*\\.properties",
