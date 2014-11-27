@@ -2,11 +2,11 @@
     "locales" : [
         {
             "smartling"   : "zh-CN",
-            "application" : "simplified"
+            "application" : "zh-Hans"
         },
         {
             "smartling"   : "zh-TW",
-            "application" : "traditional"
+            "application" : "zh-Hant"
         }
     ],
     "resourcesSets": [
