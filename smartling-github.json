@@ -17,7 +17,7 @@
         {
             "pathRegex"                 : "/web/messages/en/(?<path>.*)\\.properties",
             "translationPathExpression" : "/web/messages/zh/${path}_${locale}.${originalFile.extension}",
-            "translationCommitMessage"  : "Task TRN-18 translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}",
+            "translationCommitMessage"  : "Task TRANSLATION. Translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}",
             "type"                      : "javaProperties",
             "authorizeContent"          : true
         }
