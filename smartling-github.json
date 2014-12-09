@@ -9,7 +9,7 @@
             "application" : "zh-Hant"
         }
     ],
-    "resourcesSets": [
+    "resourceSets": [
         {
             "pathRegex"                 : "/web/messages/(?!(en|zh)).*\\.properties",
             "type"                      : "javaProperties"
