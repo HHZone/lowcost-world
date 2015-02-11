@@ -34,7 +34,7 @@
          // Minimal recourse set definition. Translations won't be pushed back.
          {
             "type"      : "javaProperties",
-            "pathRegex" : "/web/messages/.*\\.properties"
+            "pathRegex" : "/messages/.*\\.properties"
          },
 
          // Translation set for docx files, translation results will be put to "translated" sub-folder and translated locale will be added to result file names.
