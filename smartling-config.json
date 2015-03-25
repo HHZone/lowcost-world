@@ -65,7 +65,23 @@
          //                                                           /web/messages/zh-Hant/admin/main_screen/title.properties
          {
              "type"                      : "javaProperties",
-             "pathRegex"                 : "/web/messages/(?<path>.*)\\.properties"
+             "authorizeContent"          : "true",
+             "pathRegex"                 : "/web/messages/en/(?<path>.*)\\.properties",
+             "translationPathExpression" : "/web/messages/${locale}/${path}.${originalFile.extension}",
+             "translationCommitMessage"  : "Task TRN-18 translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}"
+         },
+
+         // Translate all properties files from /msg folder and put translations to a /msg sub-folder that has the same name as translated locale.
+         // Additional Smartling directives are provided, see for allowed directives for your file type at
+         // https://docs.smartling.com/display/docs/Supported+File+Types#SupportedFileTypes-java
+         {
+            "type"                      : "javaProperties",
+            "pathRegex"                 : "/msg/.*\\.properties",
+            "translationPathExpression" : "/msg/{locale}/${originalFile.name}",
+            "smartlingDirectives"       : [
+                 "smartling.placeholder_format = YAML",
+                 "smartling.variants_enabled = true"
+             ]
          }
      ]
 }
