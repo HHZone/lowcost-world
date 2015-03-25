@@ -77,7 +77,7 @@
          {
             "type"                      : "javaProperties",
             "pathRegex"                 : "/msg/.*\\.properties",
-            "translationPathExpression" : "/msg/{locale}/${originalFile.name}",
+            "translationPathExpression" : "/msg/${locale}/${originalFile.name}",
             "smartlingDirectives"       : [
                  "smartling.placeholder_format = YAML",
                  "smartling.variants_enabled = true"
